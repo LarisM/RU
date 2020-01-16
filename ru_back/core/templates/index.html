@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Restaurante Universitário</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href={% static "assets/css/main.css" %} />
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<a href="{% url 'index' %}" class="logo"><strong>Universidade Federal de Alagoas</strong></a> 
+				<nav id="nav">
+					<a href="{% url 'index' %}">Home</a>
+					<a href="{% url 'login' %}">Login</a>
+					<!--<a href="elements.html">Elements</a> -->
+				</nav>
+				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			</div>
+		</header>
+		<!-- Banner -->
+		<section id="banner">
+			<div class="inner">
+				<img src={% static "images/LOGORU1.png" %} alt="RU" /> 
+				<div class="flex ">
+					<div>
+						<h3>O programa Restaurante Universitário 
+						proporciona à comunidade Universitária 
+						espaço de convivência, integrando as 
+						ações de educação formação profissional,
+						saúde, alimentação e lazer.</h3>
+					</div>
+					</div>
+					<footer>
+						<a class="button">Bem Vindo!!</a>
+					</footer>
+				</div>
+			</div>
+		</section>
+		<!-- Scripts -->
+		<script src={% static "assets/js/jquery.min.js" %}></script>
+		<script src={% static "assets/js/skel.min.js" %}></script>
+		<script src={% static "assets/js/util.js" %}></script>
+		<script src={% static "assets/js/main.js" %}></script>
+	</body>
+</html>

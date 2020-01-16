@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>LOGIN</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href={% static "assets/css/main.css" %} />
+	</head>
+	<body class="subpage">
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<h3>Faça o login para continuar </h3>
+				<form action="#" method="post">
+					{% csrf_token %}
+					<input type = 'hidden' name = 'next' value = '{{next}}'>
+					<div class="field half first">
+						<label for="CPF">CPF</label>
+						<input CPF="CPF" id="CPF" type="text" placeholder="CPF">
+					</div>
+					<div class="field half">
+						<label for="Senha">Senha</label>
+						<input name="Senha" id="Senha" type="password" placeholder="Senha">
+					</div>
+					<ul class="actions">
+						<li><input value="login" class="button alt" type="submit"></li>
+					</ul>
+				</form>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src={% static "assets/js/jquery.min.js" %}></script>
+		<script src={% static "assets/js/skel.min.js" %}></script>
+		<script src={% static "assets/js/util.js" %}></script>
+		<script src={% static "assets/js/main.js" %}></script>
+	</body>
+</html>
